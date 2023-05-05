@@ -1,0 +1,64 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	--font-sans: 'Manrope', sans-serif;
+	--font-mono: 'JetBrains Mono';
+}
+
+body {
+	display: grid;
+	place-content: center;
+	padding: var(--size-7);
+}
+
+body,
+button,
+input,
+a {
+	cursor: url('https://fav.farm/👆️') 15 0, auto;
+}
+
+h1,
+h2,
+h3 {
+	text-transform: capitalize;
+}
+
+h1 {
+	max-inline-size: 100%;
+	margin-bottom: var(--size-7);
+	padding-bottom: var(--size-3);
+	font-size: var(--font-size-fluid-2);
+	border-bottom: 1px solid var(--gray-8);
+}
+
+h2 {
+	margin-bottom: var(--size-3);
+}
+
+img {
+	border-radius: var(--radius-2);
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style: none;
+	list-style-position: inside;
+}
+
+li {
+	padding-block: var(--size-7);
+	font-size: var(--font-size-fluid-1);
+	text-transform: capitalize;
+}
+
+li:not(:last-child) {
+	border-bottom: 1px solid var(--gray-8);
+}
+
+p::first-letter {
+	text-transform: capitalize;
+}
